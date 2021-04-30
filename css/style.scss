@@ -1,0 +1,740 @@
+@import '_variables.scss';
+@import '_mixin.scss';
+@import '_media.scss';
+
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: "Libre Baskerville";
+}
+.nav-bar{
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    top:0; 
+    min-height: 50px;
+    z-index: 100;
+}
+.nav-link{
+    font-weight: 600;
+    margin-right: 12px;
+    @include link-style;
+}
+#logo-header{
+    @include logo-style;
+    font-size: 40px;
+    font-weight: 700;
+    color: $link-color;
+}
+.title{
+    background: url(../img/section-bc.png) no-repeat center / cover;
+    @include overlay;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "header-title"
+    "section-btn"
+    "features"
+}
+h1{
+    padding-top: 200px;
+    padding-bottom: 70px;
+    text-align: center;
+    color: #fff;
+    font-size: 46px;
+    grid-area: header-title;
+    grid-row: 1fr;
+    grid-column: 1fr;
+    white-space: pre-line;
+}
+.section-btn{
+    @include btn-style;
+    background-color: $red-color;
+    color: #fff;
+    grid-area: section-btn;
+    grid-row: 1fr;
+    grid-column: 1fr;
+    margin: 0 auto;
+}
+.section-btn:active, .section-btn:focus {
+    outline: none !important;
+}
+.features{
+    grid-area: features;
+    grid-row: 1fr;
+    grid-column: 1fr;
+}
+.figure  > span{
+    display: block;
+    padding-top: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.project-title{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.figure-1{
+    color: $green-color;
+}
+.figure-2{
+    color: $violet-color;
+}
+.figure-3{
+    color: $yellow-color;
+}
+@keyframes jump {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-20px);
+	}
+	80% {
+		transform: translateY(-10px);
+	}
+}
+.figure-1:hover, .figure-2:hover, .figure-3:hover {
+    animation: jump 1s;
+}
+#about-us{
+    position: relative;
+    padding-top: 100px;
+}
+.about-us-title{
+    color: $title-color;
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 20px;
+    font-size: 32px;
+}
+.about-us-text{
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 20px;
+    color: $about-color;
+}
+.our-focus-title{
+    @include title-style;
+    grid-area: our-focus-title;
+    padding-top: 100px;
+}
+.our-focus-about{
+    @include text-about-style;
+    grid-area: about;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.web-design-item{
+    grid-area: web-design;
+    box-shadow: 0 0 2px 2px $box-shadow;
+    border-bottom: 3px solid $red-color;
+}
+.ux-design-item{
+    grid-area: ux-design;
+    box-shadow: 0 0 2px 2px $box-shadow;
+    border-bottom: 3px solid $green-color;
+}
+.photo-item{
+    grid-area: photo-item;
+    box-shadow: 0 0 2px 2px $box-shadow;
+    border-bottom: 3px solid $violet-color;
+}
+.app-develop-item{
+    grid-area: app-item;
+    box-shadow: 0 0 2px 2px $box-shadow;
+    border-bottom: 3px solid $yellow-color;
+}
+.item-title{
+    color: $title-color;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 40px;
+}
+.item-text{
+    text-align: center;
+    padding: 40px;
+    line-height:1.7rem;
+    font-size: 15px;
+    color: $about-color;
+}
+.video-item{
+    width: 100%;
+    max-height: 400px; 
+    overflow: hidden; 
+    margin-bottom: 30px; 
+}    
+.video-item::before{
+    content: '';
+    position: absolute;
+    height: 400px; 
+    width: 100%;
+    background: $overlay-color;
+    opacity: 0.7;
+}
+.section-title{
+    @include title-style;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+.section-about{
+    @include text-about-style;
+    margin-top: 30px;
+}
+.project-link{
+    margin-right: 12px;
+    @include link-style;
+}
+.grid-portfolio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: center;
+}
+.project{
+    margin-right: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    filter: brightness(100%);
+    transition: all 1s ease;
+}
+.project-title{
+    text-align: center;
+    padding-bottom: 10px;
+    display: none;
+}
+.project-link-btn{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    text-align: center;
+    color:#fff;
+    font-size: 48px;
+    width: 70px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+.project-link-btn:active, .project-link-btn:focus {
+    outline: none !important;
+}
+.team-part{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: center;
+}
+#member-name-1{
+    @include member-name;
+    color:$red-color;
+}
+#member-name-2{
+    @include member-name;
+    color:$green-color;
+}
+#member-name-3{
+    @include member-name;
+    color:$violet-color;
+}
+#member-name-4{
+    @include member-name;
+    color:$yellow-color;
+}
+.job-title{
+    margin-top: 10px;
+    font-size: 13px;
+    text-align: center;
+    color:$about-color;
+}
+#our-team{
+    margin-top: 100px;
+    background-color:$bc-color;
+}
+#member-1{
+   @include member-item-style;
+    border-bottom: 3px solid $red-color; 
+}
+#member-2{
+    @include member-item-style;
+     border-bottom: 3px solid $green-color; ;
+}
+#member-3{
+    @include member-item-style;
+     border-bottom: 3px solid $violet-color; ;
+}
+#member-4{
+   @include member-item-style;
+    border-bottom: 3px solid $yellow-color; ;
+}
+.about-member-title{
+    color: $title-color;
+    font-size: 24px;
+    text-align: left;
+    padding: 50px;
+}
+.member-description{
+    color: $about-color;
+    font-size: 16px;
+    line-height: 2rem;
+    text-align: left;
+    padding-left: 40px;
+}
+.media-link{
+    @include link-style;
+}
+.media-link:hover{
+    text-shadow: 0 0 5px $violet-color;
+}
+.counter{
+    background: url(../img/bc-image.png) no-repeat top / cover;
+    @include overlay;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+.item-counter> span, .item-counter>img {
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    font-size: 16px;
+    color: #fff; 
+}
+#work-step-img{
+    margin-top: 100px;
+}
+.step-img{
+    display:block;
+    opacity: 0.8;
+}
+.step-number{
+    color: $step-number-color;
+    text-align: left;
+    font-size: 40px;
+}
+.step-title{
+    color: $link-color;
+    text-align: center;
+    font-size: 20px;
+}
+.about-step{
+    color: $about-color;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5rem;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+#price{
+    margin-top: 100px;
+    padding-bottom: 30px;
+    background-color: $bc-color;
+}
+.packages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 100px;
+    padding-bottom: 50px;
+}
+#package-1{
+     @include package;
+     border-top: 3px solid $green-color ; 
+}
+#package-2{
+    @include package;
+    border-top: 3px solid $red-color ; 
+}
+#package-3{
+    @include package;
+    border-top: 3px solid $violet-color ; 
+}
+.package-name{
+    text-align: center;
+    color: $title-color;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.package-point{
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+}
+#price-1{
+    @include price;
+    background: url(../img/circle-green.png) no-repeat center / cover;
+}
+#wrap-price-1{
+    @include wrap-price;
+    border: 2px solid $green-color;
+}
+#price-2{
+    @include price;
+    background: url(../img/circle-red.png) no-repeat center / cover;
+}
+#wrap-price-2{
+    @include wrap-price;
+    border: 2px solid $red-color;
+}
+#price-3{
+    @include price;
+    background: url(../img/circle-violet.png) no-repeat center / cover;
+}
+#wrap-price-3{
+    @include wrap-price;
+    border: 2px solid $violet-color;
+}
+#price-btn-1{
+    @include btn-style;
+    @include btn-price-style;
+    border-color: $green-color;
+    color:$green-color;
+}
+#price-btn-2{
+    @include btn-style;
+    @include btn-price-style;
+    border-color: $red-color;
+    color:$red-color;
+}
+#price-btn-3{
+    @include btn-style;
+    @include btn-price-style;
+    border-color: $violet-color;
+    color:$violet-color;
+}
+#price-btn-1:active, #price-btn-1:focus,
+#price-btn-2:active, #price-btn-2:focus,
+#price-btn-3:active, #price-btn-3:focus {
+    outline: none !important;
+}
+#price-btn-1:hover{
+    background-color: $green-color;
+    color: #fff;
+}
+#price-btn-2:hover{
+    background-color: $red-color;
+    color: #fff;
+}
+#price-btn-3:hover{
+    background-color: $violet-color;
+    color: #fff;
+}
+#testimonials{
+    background-color: $overlay-color;
+    padding-bottom: 100px;
+}
+.slider-title{
+    @include slider-title;
+    font-size: 34px;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+.slider-about{
+    @include slider-title;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.slide-text{
+    color: $about-color;
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.7rem;
+}
+.user-name{
+    font-family: "Sacramento";
+    font-size: 32px;
+    color:$about-color;
+    text-align: left;
+    margin-top: 40px;
+}
+.user-full-name{
+    margin-top: 15px;
+    font-size: 18px;
+    color: $link-color;
+    text-align: left;
+}
+.user-job{
+    margin-top: 10px;
+    font-size: 13px;
+    color: $red-color;
+    text-align: left;
+}
+.dot-item{
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    margin-right: 10px;
+}
+.dot-item:hover{
+    color: $red-color;
+}
+.slide-2, .slide-3, .slide-4, .slide-5, .slide-6{
+    display: none;
+}
+.select-item-1{
+    grid-area:select-item-1;
+}
+.select-item-2{
+    grid-area:select-item-2;
+}
+.select-item-3{
+    grid-area:select-item-3;
+}
+.select-item-4{
+    grid-area:select-item-4;
+}
+.select-item-5{
+    grid-area:select-item-5;
+}
+.select-item-6{
+    grid-area:select-item-6;
+}
+.select-title{
+    display: inline-block;
+    white-space: pre-line;
+    vertical-align:middle;
+    margin: 15px;
+    font-size: 18px;
+    color: $link-color;
+}
+.select-img{
+    vertical-align:middle;
+}
+.select-description{
+    color: $about-color;
+    font-size: 15px;
+}
+.start-btn-title{
+    color: $link-color;
+    font-size: 22px;
+    letter-spacing: 0.1em;
+}
+.select-btn{
+    vertical-align: middle;
+    margin-left: 50px;
+    @include btn-style;
+    background-color: $red-color;
+    color: #fff;
+}
+.select-btn:active, .select-btn:focus {
+    outline: none !important;
+}
+#blog-part{
+    margin-top: 100px;
+    background-color: $bc-color;
+}
+.article-content{
+    padding: 20px;
+}
+.article-1{
+    @include article-style;
+    border-bottom: 3px solid $red-color;
+}
+.article-2{
+    @include article-style;
+    border-bottom: 3px solid $green-color;
+}
+.article-3{
+    @include article-style;
+    border-bottom: 3px solid $violet-color;
+}
+.article-4{
+  @include article-style;
+  border-bottom: 3px solid $yellow-color;
+}
+.article-img-2, .article-img-3, .article-img-4{
+    display:none;
+}
+.article-autor-1{
+    color: $red-color;
+    @include article-autor;
+}
+.article-autor-2{
+    color: $green-color;
+    @include article-autor;
+}
+.article-autor-3{
+    color: $violet-color;
+    @include article-autor;
+}
+.article-autor-4{
+    color: $yellow-color;
+    @include article-autor;
+}
+.article-date{
+    color: $about-color;
+    font-size: 13px;
+}
+.article-link-1{
+    @include article-link;
+    color: black;
+}
+.article-link-2{
+    @include article-link;
+    color: $green-color;
+}
+.article-link-3{
+    @include article-link;
+    color: $violet-color;
+}
+.article-link-4{
+    @include article-link;
+    color: $yellow-color;
+}
+.article-title{
+    padding-top: 15px;
+    color: $link-color;
+    font-size: 20px;
+    line-height: 2rem;
+}
+.article-text{
+    padding-top: 15px;
+    color: $about-color;
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+.subscribe{
+    margin-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #fff;
+}
+.subscribe-title{
+    text-align: center;
+    color: $link-color;
+    font-size: 22px;
+    letter-spacing: 0.1em;
+}
+.blog-form{
+    padding-top: 50px;
+    display: table;
+}
+.blog-input{
+    display: inline;
+    text-align: left;
+    padding-left: 20px;
+    margin-right: 0;
+    font-size: 14px;
+    border:$bc-color;
+    border-radius: 20px 0 0 20px;
+    background-color:$bc-color;
+}
+.blog-btn{
+    display: inline;
+    width: 180px;
+    height: 50px;
+    border-radius: 0 20px 20px 0;
+    font-weight: 600;
+    color: #fff;
+    border-color:  $red-color;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background-color: $red-color;
+    margin-left: 0;
+    cursor: pointer;
+}
+.blog-btn:active, .blog-btn:focus, .blog-input:active, .blog-input:focus {
+    outline: none !important;
+}
+#contacts{
+    padding-bottom: 20px;
+    background-color: $bc-color;
+}
+.contacts-form{
+    margin-top: 50px;
+}
+#message{
+    @include form-style;
+    resize: none;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    width: 700px;
+    height: 200px;
+    margin: 0 auto;
+}
+input:focus::placeholder, #message:focus::placeholder{
+    color: transparent;
+}
+.form-btn{
+    @include btn-style;
+    background-color: $red-color;
+    color: #fff;
+    margin-top: 50px;
+}
+.footer-contacts{
+    padding: 40px;   
+    background-color: $overlay-color;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.footer-logo{
+    grid-area: footer-logo;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#logo{
+    @include logo-style;
+    font-size: 50px;
+    color: #fff;
+}
+.footer-address-1{
+    grid-area:address-1;
+    justify-content: center;
+}
+.footer-address-2{
+    grid-area:address-2;
+    justify-content: center;
+}
+.footer-links{
+    grid-area: links;
+    justify-content: center;
+}
+.title-addres-1{
+    color: $green-color;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.title-addres-2{
+    color: $violet-color;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.folow-us{
+    color: $yellow-color;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.address-text{
+    color:$about-color;
+    font-size: 15px;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
+.link{
+    display: inline;
+    color:$about-color;
+    font-size: 30px;
+    margin-right: 5px;
+}
+.contact-link{
+    cursor: pointer;
+    text-decoration: none;
+}
+.link:hover{
+    color: $red-color;
+}

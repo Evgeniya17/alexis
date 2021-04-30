@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <a id="logo-header" href="index.html"> Alexis </a>
+            <i class="fas fa-bars menu-btn" onclick="menuDrop()"></i>
+            <a class="nav-link" href="#about-us" target="_self">About Us</a> 
+            <a class="nav-link" href="#our-focus" target="_self">Our Focus</a> 
+            <a class="nav-link" href="#portfolio" target="_self">Portfolio</a>
+            <a class="nav-link" href="#our-team" target="_self">Our Team</a> 
+            <a class="nav-link" href="#work-steps" target="_self">Work Steps</a> 
+            <a class="nav-link" href="#price" target="_self">Pricing</a>
+            <a class="nav-link" href="#testimonials" target="_self">Testimonials</a> 
+            <a class="nav-link" href="#contacts" target="_self">Contact</a> 
+        </nav>
+    </header>
+    <main>
+         <section class="title">
+             <h1>We design things with love
+                  and passion.</h1>
+             <button class="section-btn" type="button" name="our-works" onclick="anchor()">Our works</button>
+             <div class="features">
+                 <div class="figure figure-1">
+                     <img src="img/dollar.png" alt="dollar">
+                     <span>Fixed price projects</span>
+                 </div>
+                 <div class="figure figure-2">
+                     <img src="img/clock.png" alt="clock">
+                     <span>Receive on time</span>
+                 </div>
+                 <div class="figure figure-3">
+                     <img src="img/check.png" alt="check">
+                     <span>Satisfaction guranteed</span>
+                 </div>
+             </div>
+         </section>
+         <section id="about-us">
+             <img id="about-us-img" src="img/about-us.png" alt="about-us">
+             <article class="about-us-article">
+                 <h2 class="about-us-title">About Us.</h2>
+                 <p class="about-us-text"> Analytics release series A financing launch party interaction design android angel investor. 
+                     Vesting period social media sales conversion launch party rockstar incubator customer social proof graphical 
+                     user interface technology supply chain.Non-disclosure agreement rockstar creative partner network launch party 
+                     social proof paradigm shift long tail influencer.
+                 </p>
+                 <p class="about-us-text">  Monetization validation success. 
+                     Seed round channels product management. Customer non-disclosure agreement strategy android growth hacking ramen buyer.
+                 </p>
+             </article>
+         </section>
+         <section id="our-focus">
+             <h2 class="our-focus-title">Our Focus.</h2>
+             <h3 class="our-focus-about">We understand your requirement and provide quality works.</h3>
+             <div class="web-design-item">
+                 <img class="item-img" src="img/web-design-icon.png" alt="web-design">
+                 <h4 class="item-title">Web Design</h4>
+                 <p class="item-text">
+                     Analytics release series A 
+                     financing launch party interaction design
+                     android angel investor.
+                 </p>
+             </div>
+             <div class="ux-design-item">
+                 <img class="item-img" src="img/ux-design-icon.png" alt="ux-design">
+                 <h4 class="item-title">UX Design</h4>
+                 <p class="item-text">
+                     Analytics release series A 
+                     financing launch party interaction design android 
+                     angel investor.
+                 </p>
+             </div>
+             <div class="photo-item">
+                 <img class="item-img" src="img/photo-icon.png" alt="photo">
+                 <h4 class="item-title" >Photogrpahy</h4>
+                 <p class="item-text">
+                     Analytics release series A 
+                     financing launch party interaction design android 
+                     angel investor.
+                 </p>
+             </div>
+             <div class="app-develop-item">
+                 <img class="item-img" src="img/app-icon.png" alt="app-develop">
+                 <h4 class="item-title">App Development</h4>
+                 <p class="item-text">
+                     Analytics release series A 
+                     financing launch party interaction design 
+                     android angel investor.
+                 </p>
+             </div>
+         </section>
+         <div class="video-item" >
+            <h3 class="video-title">Explore Our Awesomeness</h3>
+            <i class="far fa-play-circle play-btn"></i>
+            <h4 class="btn-title">Click to play the video</h4>
+             <video id="video" controls> 
+                <source src="video/video.mp4" type="video/mp4" >
+                <source src="video/video.webm" type="video/webm">
+             </video>
+        </div>
+         <section id="portfolio">
+             <h2 class="section-title">Portfolio.</h2>
+             <h3 class="section-about">We understand your requirement and provide quality works.</h3>
+             <div class="grid-portfolio">
+                 <figure class="project">
+                     <img src="img/project-1.png" alt="project-1">
+                     <button class="project-link-btn" type="button" name="project-1" onclick="linkClick()">+</button>
+                     <figcaption class="project-title">
+                         <a class="project-link" href="#">Project One</a>
+                     </figcaption>
+                 </figure>
+                 <figure class="project">
+                     <img src="img/project-2.png" alt="project-2">
+                     <button class="project-link-btn" type="button" name="project-2" onclick="linkClick()">+</button>
+                     <figcaption class="project-title"> 
+                         <a class="project-link" href="#">Project Two</a>
+                     </figcaption>
+                 </figure>
+                 <figure class="project">
+                     <img class="project-img" src="img/project-3.png" alt="project-3">
+                     <button class="project-link-btn" type="button" name="project-3" onclick="linkClick()">+</button>
+                     <figcaption class="project-title">
+                         <a class="project-link" href="#">Project Three</a>
+                     </figcaption>
+                 </figure>
+                 <figure class="project">
+                     <img class="project-img" src="img/project-4.png" alt="project-4">
+                     <button class="project-link-btn" type="button" name="project-4" onclick="linkClick()">+</button>
+                     <figcaption class="project-title">
+                         <a class="project-link" href="#">Project Four</a>
+                     </figcaption>
+                 </figure>
+                 <figure class="project">
+                     <img class="project-img" src="img/project-5.png" alt="project-5">
+                     <button class="project-link-btn" type="button" name="project-5" onclick="linkClick()">+</button>
+                     <figcaption class="project-title">
+                         <a class="project-link" href="#">Project Five</a>
+                     </figcaption>
+                 </figure>
+                 <figure class="project">
+                     <img class="project-img" src="img/project-6.png" alt="project-6">
+                     <button class="project-link-btn" type="button" name="project-6" onclick="linkClick()">+</button>
+                     <figcaption class="project-title">
+                         <a class="project-link" href="#">Project Six</a>
+                     </figcaption>
+                 </figure>
+                 <figure class="project">
+                     <img class="project-img" src="img/project-7.png" alt="project-7">
+                     <button class="project-link-btn" type="button" name="project-7" onclick="linkClick()">+</button>
+                     <figcaption class="project-title">
+                         <a class="project-link" href="#">Project Seven</a>
+                     </figcaption>
+                 </figure>
+                 <figure class="project">
+                     <img class="project-img" src="img/project-8.png" alt="project-8">
+                     <button class="project-link-btn" type="button" name="project-8" onclick="linkClick()">+</button>
+                     <figcaption class="project-title">
+                         <a class="project-link" href="#">Project Eight</a>
+                     </figcaption>
+                 </figure>
+                 <figure class="project">
+                     <img class="project-img" src="img/project-9.png" alt="project-9">
+                     <button class="project-link-btn" type="button" name="project-9" onclick="linkClick()">+</button>
+                     <figcaption class="project-title">
+                         <a class="project-link" href="#">Project Nine</a>
+                     </figcaption>
+                 </figure>
+             </div>
+         </section>   
+         <section id="our-team">
+             <h2 class="section-title">Our Team.</h2>
+             <h3 class="section-about">We understand your requirement and provide quality works.</h3>
+             <div class="team-part">
+                 <figure id="member-1">
+                     <img id="member-img-1" src="img/user-icon.png" alt="photo">
+                     <figcaption>
+                         <h3 id="member-name-1">Michael Schmitt</h3>
+                         <h4 class="job-title">Founder & CEO</h4>
+                     </figcaption>
+                 </figure>
+                 <figure id="member-2">
+                     <img id="member-img-2" src="img/user-icon.png" alt="photo">
+                     <figcaption>
+                         <h3 id="member-name-2">David Krämer</h3>
+                         <h4 class="job-title">Lead Developer</h4>
+                     </figcaption>
+                 </figure>
+                 <figure id="member-3">
+                     <img id="member-img-3" src="img/user-icon.png" alt="photo">
+                     <figcaption>
+                         <h3 id="member-name-3">Anna Schröder</h3>
+                         <h4 class="job-title">Designer</h4>
+                     </figcaption>
+                 </figure>
+                 <figure id="member-4">
+                     <img id="member-img-4" src="img/user-icon.png" alt="photo">
+                     <figcaption>
+                         <h3 id="member-name-4">Jason Teichmannt</h3>
+                         <h4 class="job-title">Consultant</h4>
+                     </figcaption>
+                 </figure>
+                 <div class="about-member-1">
+                     <div>
+                         <h3 class="about-member-title">About Michael</h3>
+                         <p class="member-description">Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth agile development branding. Backing facebook hackathon conversion startup scrum project niche market business-to-consumer paradigm shift traction. Rockstar 
+                         bandwidth twitter ownership success disruptive series A financing user experience buyer client social proof validation hypotheses. User experience crowdfunding 
+                         facebook seed round A/B testing mass market. </p>
+                     </div>
+                     <div>
+                         <img class="networks" src="img/networks.png" alt="networks">
+                     </div>
+                     <div class="font-icon">
+                         <i class="fab fa-facebook-square">
+                             <a class="media-link" href="https://www.facebook.com/">Facebook</a>
+                          </i>
+                          <i class="fab fa-twitter-square">
+                              <a class="media-link" href="https://twitter.com/">Twitter</a>
+                          </i>
+                          <i class="fab fa-linkedin">
+                              <a class="media-link" href="https://www.linkedin.com/">LinkeId</a>
+                          </i>
+                          <i class="fab fa-instagram">
+                              <a class="media-link" href="https://www.instagram.com/">Instagram</a>
+                          </i> 
+                     </div>
+                 </div>
+                 <div class="about-member-2">
+                     <div>
+                         <h3 class="about-member-title">About David</h3>
+                         <p class="member-description">Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth agile development branding. Backing facebook hackathon conversion startup scrum project niche market business-to-consumer paradigm shift traction. Rockstar 
+                         bandwidth twitter ownership success disruptive series A financing user experience buyer client social proof validation hypotheses. User experience crowdfunding 
+                         facebook seed round A/B testing mass market. </p>
+                     </div>
+                    <div>
+                         <img class="networks" src="img/networks.png" alt="networks">
+                    </div>
+                    <div class="font-icon">
+                         <i class="fab fa-facebook-square">
+                              <a class="media-link" href="https://www.facebook.com/">Facebook</a>
+                         </i>
+                         <i class="fab fa-twitter-square">
+                             <a class="media-link" href="https://twitter.com/">Twitter</a>
+                         </i>
+                         <i class="fab fa-linkedin">
+                             <a class="media-link" href="https://www.linkedin.com/">LinkeId</a>
+                         </i>
+                         <i class="fab fa-instagram">
+                             <a class="media-link" href="https://www.instagram.com/">Instagram</a>
+                         </i>    
+                    </div>
+                 </div>
+                 <div class="about-member-3">
+                     <div>
+                         <h3 class="about-member-title">About Anna</h3>
+                         <p class="member-description">Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth agile development branding. Backing facebook hackathon conversion startup scrum project niche market business-to-consumer paradigm shift traction. Rockstar 
+                         bandwidth twitter ownership success disruptive series A financing user experience buyer client social proof validation hypotheses. User experience crowdfunding 
+                         facebook seed round A/B testing mass market. </p> 
+                     </div>
+                     <div>
+                           <img class="networks" src="img/networks.png" alt="networks">
+                     </div>
+                     <div class="font-icon">
+                          <i class="fab fa-facebook-square">
+                              <a class="media-link" href="https://www.facebook.com/">Facebook</a>
+                          </i>
+                          <i class="fab fa-twitter-square">
+                              <a class="media-link" href="https://twitter.com/">Twitter</a>
+                          </i>
+                          <i class="fab fa-linkedin">
+                              <a class="media-link" href="https://www.linkedin.com/">LinkeId</a>
+                          </i>
+                          <i class="fab fa-instagram">
+                              <a class="media-link" href="https://www.instagram.com/">Instagram</a>
+                          </i>    
+                     </div>
+                 </div>
+                 <div class="about-member-4">
+                     <div>
+                         <h3 class="about-member-title">About Jason</h3>
+                         <p class="member-description">Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth agile development branding. Backing facebook hackathon conversion startup scrum project niche market business-to-consumer paradigm shift traction. Rockstar 
+                         bandwidth twitter ownership success disruptive series A financing user experience buyer client social proof validation hypotheses. User experience crowdfunding 
+                         facebook seed round A/B testing mass market. </p>
+                     </div>
+                     <div>
+                          <img class="networks" src="img/networks.png" alt="networks">
+                     </div>
+                     <div class="font-icon">
+                         <i class="fab fa-facebook-square">
+                             <a class="media-link" href="https://www.facebook.com/">Facebook</a>
+                         </i>
+                         <i class="fab fa-twitter-square">
+                             <a class="media-link" href="https://twitter.com/">Twitter</a>
+                         </i>
+                         <i class="fab fa-linkedin">
+                             <a class="media-link" href="https://www.linkedin.com/">LinkeId</a>
+                         </i>
+                         <i class="fab fa-instagram">
+                             <a class="media-link" href="https://www.instagram.com/">Instagram</a>
+                         </i>    
+                     </div>
+                 </div>
+             </div>
+             <div class="counter">
+                 <div class="item-counter">
+                     <img src="img/graph.png" alt="graph">
+                     <span id="count-1"><b>12,458+</b></span>
+                     <span>Projects Completed</span>
+                     <img src="img/red-dot.png" alt="red-dot">
+                 </div>
+                 <div class="item-counter">
+                     <img src="img/user.png" alt="user">
+                     <span id="count-2"><b>1,796+</b></span>
+                     <span>Satisfied Clients</span>
+                     <img src="img/green-dot.png" alt="green-dot">
+                 </div>
+                 <div class="item-counter">
+                     <img src="img/like.png" alt="like">
+                     <span id="count-3"><b>1,000+</b></span>
+                     <span>Positive Feedbacks</span>
+                     <img src="img/violet-dot.png" alt="violet-dot">
+                 </div>
+                 <div class="item-counter">
+                     <img src="img/gift.png" alt="gift">
+                     <span id="count-4"><b>1,500+</b></span>
+                     <span>Freebies Released</span>
+                     <img src="img/yellow-dot.png" alt="yellow-dot">
+                 </div>
+             </div>
+         </section>
+         <section id="work-steps">
+             <h2 class="section-title">Work Steps.</h2>
+             <h3 class="section-about">We understand your requirement and provide quality works.</h3>
+             <div  id="work-step-img">
+                 <img class="step-img" src="img/step-1.png" alt="project-understanding">
+                 <img class="step-img" src="img/step-2.png" alt="research-planning">
+                 <img class="step-img" src="img/step-3.png" alt="wireframe-design">
+                 <img class="step-img" src="img/step-4.png" alt="development">
+             </div>
+             <article id="step-1">
+                 <h2 class="step-number">01</h2>
+                 <h3 class="step-title">Project Understanding</h3>
+                 <p class="about-step">Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor 
+                     accelerator.</p>
+             </article>
+             <article id="step-2">
+                 <h2 class="step-number">02</h2>
+                 <h3 class="step-title">Research & Planning</h3>
+                 <p class="about-step">Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor 
+                     accelerator.</p>
+             </article>
+             <article id="step-3">
+                 <h2 class="step-number">03</h2>
+                 <h3 class="step-title">Wireframe & Design</h3>
+                 <p class="about-step">Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor 
+                     accelerator.</p>
+             </article>
+             <article id="step-4">
+                 <h2 class="step-number">04</h2>
+                 <h3 class="step-title">Development</h3>
+                 <p class="about-step">Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor 
+                     accelerator.</p>
+             </article>
+         </section>
+         <section id="price">
+             <h2 class="section-title">Pricing Table.</h2>
+             <h3 class="section-about">We understand your requirement and provide quality works.</h3>
+             <div class="packages">
+                 <div id="package-1">
+                      <h3 class="package-name">Starter</h3>
+                      <div id="wrap-price-1">
+                        <p id="price-1">$125 
+                            Per Month</p>
+                      </div>
+                      <span class="package-point"><b>200GB</b> Online Storage</span>
+                      <span class="package-point"><b>20</b> Files Per Day</span>
+                      <span class="package-point"><b>2TB</b> Monthly Bandwidth</span>
+                      <span class="package-point"><b>✓</b> Secure Platform</span>
+                      <span class="package-point"><b>✓</b> 24/7 Customer Support</span>
+                      <span class="package-point"><b>✓</b>  Fast & Reliable</span>
+                      <button id="price-btn-1" type="button" name="get-started" onclick="linkClick()">Get Started</button>
+                   </div>
+                 <div id="package-2">
+                     <h3 class="package-name">Ultimate</h3>
+                     <div id="wrap-price-2">
+                        <p id="price-2">$195 
+                            Per Month</p>
+                      </div>
+                     <span class="package-point"><b>800GB</b> Online Storage</span>
+                     <span class="package-point"><b>Unlimited</b> Files Per Day</span>
+                     <span class="package-point"><b>10TB</b> Monthly Bandwidth</span>
+                     <span class="package-point"><b>✓</b> Secure Platform</span>
+                     <span class="package-point"><b>✓</b> 24/7 Customer Support</span>
+                     <span class="package-point"><b>✓</b> Fast & Reliable</span>
+                     <button id="price-btn-2" type="button" name="get-started" onclick="linkClick()">Get Started</button>
+                 </div>
+                 <div id="package-3">
+                     <h3 class="package-name">Professional</h3>
+                     <div id="wrap-price-3">
+                        <p id="price-3">$145 
+                            Per Month</p>
+                      </div>
+                     <span class="package-point"><b>200GB</b> Online Storage</span>
+                     <span class="package-point"><b>20</b> Files Per Day</span>
+                     <span class="package-point"><b>2TB</b> Monthly Bandwidth</span>
+                     <span class="package-point"><b>✓</b> Secure Platform</span>
+                     <span class="package-point"><b>✓</b> 24/7 Customer Support</span>
+                     <span class="package-point"><b>✓</b> Fast & Reliable</span>
+                     <button id="price-btn-3" type="button" name="get-started" onclick="linkClick()">Get Started</button>
+                 </div>
+             </div>
+         </section>
+         <section id="testimonials">
+            <h2 class="slider-title">Testimonials.</h2>
+            <h3 class="slider-about">We understand your requirement and provide quality works.</h3>
+            <article class="slider">
+                <div class="slide-item slide-1">
+                    <img class="user-img" src="img/user-photo.png" alt="user-photo">                   
+                    <div class="slide-content">
+                         <p class="slide-text">Deployment ownership non-disclosure agreement vesting period crowdfunding success influencer
+                        partnership equity series A financing network effects user experience crowdsource. Burn rate stock
+                        bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.</p>
+                        <h2 class="user-name">Melina</h2>
+                        <h3 class="user-full-name">Melina Albrecht</h3>
+                        <h4 class="user-job">Founder, TingTong</h4>
+                    </div>
+                </div>
+                <div class="slide-item slide-2">
+                    <img class="user-img" src="img/user-photo.png" alt="user-photo">
+                    <div class="slide-content">
+                        <p class="slide-text">Deployment ownership non-disclosure agreement vesting period crowdfunding success influencer
+                            partnership equity series A financing network effects user experience crowdsource. Burn rate stock
+                            bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.</p>
+                        <h2 class="user-name">Melina</h2>
+                        <h3 class="user-full-name">Melina Albrecht</h3>
+                        <h4 class="user-job">Founder, TingTong</h4>
+                    </div>
+                </div>
+                <div class="slide-item slide-3">
+                    <img class="user-img" src="img/user-photo.png" alt="user-photo">
+                    <div class="slide-content">
+                        <p class="slide-text">Deployment ownership non-disclosure agreement vesting period crowdfunding success influencer
+                            partnership equity series A financing network effects user experience crowdsource. Burn rate stock
+                            bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.</p>
+                        <h2 class="user-name">Melina</h2>
+                        <h3 class="user-full-name">Melina Albrecht</h3>
+                        <h4 class="user-job">Founder, TingTong</h4>
+                    </div>
+                </div>
+                <div class="slide-item slide-4">
+                    <img class="user-img" src="img/user-photo.png" alt="user-photo">
+                    <div class="slide-content">
+                        <p class="slide-text">Deployment ownership non-disclosure agreement vesting period crowdfunding success influencer
+                            partnership equity series A financing network effects user experience crowdsource. Burn rate stock
+                            bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.</p>
+                        <h2 class="user-name">Melina</h2>
+                        <h3 class="user-full-name">Melina Albrecht</h3>
+                        <h4 class="user-job">Founder, TingTong</h4>
+                    </div>
+                </div>
+                <div class="slide-item slide-5">
+                    <img class="user-img" src="img/user-photo.png" alt="user-photo">
+                    <div class="slide-content">
+                        <p class="slide-text">Deployment ownership non-disclosure agreement vesting period crowdfunding success influencer
+                            partnership equity series A financing network effects user experience crowdsource. Burn rate stock
+                            bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.</p>
+                        <h2 class="user-name">Melina</h2>
+                        <h3 class="user-full-name">Melina Albrecht</h3>
+                        <h4 class="user-job">Founder, TingTong</h4>
+                    </div>
+                </div>
+                <div class="slide-item slide-6">
+                    <img class="user-img" src="img/user-photo.png" alt="user-photo">
+                    <div class="slide-content">
+                        <p class="slide-text">Deployment ownership non-disclosure agreement vesting period crowdfunding success influencer
+                            partnership equity series A financing network effects user experience crowdsource. Burn rate stock
+                            bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.</p>
+                        <h2 class="user-name">Melina</h2>
+                        <h3 class="user-full-name">Melina Albrecht</h3>
+                        <h4 class="user-job">Founder, TingTong</h4>
+                    </div>
+                </div>
+            </article>
+            <div class="dots">
+                <span class="dot-item dot-1" onclick="slideOne()">&#8226;</span>
+                <span class="dot-item dot-2" onclick="slideTwo()">&#8226;</span>
+                <span class="dot-item dot-3" onclick="slideThree()">&#8226;</span>
+                <span class="dot-item dot-4" onclick="slideFour()">&#8226;</span>
+                <span class="dot-item dot-5" onclick="slideFive()">&#8226;</span>
+                <span class="dot-item dot-6" onclick="slideSix()">&#8226;</span>
+            </div>
+         </section>
+         <section id="select-us-part">
+            <h2 class="section-title">Why Select Us?</h2>
+            <h3 class="section-about">We understand your requirement and provide quality works.</h3>
+            <div class="select-us-grid">
+                <div class="select-item-1">
+                    <img class="select-img" src="img/business-growth.png" alt="business-growth">
+                    <h3 class="select-title">Business
+                        Growth</h3>
+                    <p class="select-descriotion">Success scrum project funding marketing seed money prototype innovator direct hackathon android angel investor. </p>
+                </div>
+                <div class="select-item-2">
+                    <img class="select-img" src="img/unlimited-revisions.png" alt="unlimited-revisions">
+                    <h3 class="select-title">Unlimited
+                        Revisions</h3>
+                    <p class="select-descriotion">Technology founders churn rate niche market long tail release iteration burn rate backing. Churn rate accelerator.</p>
+                </div>
+                <div class="select-item-3">
+                    <img class="select-img" src="img/ultimat-perfection.png" alt="ultimat-perfection">
+                    <h3 class="select-title">Ultimate
+                        Perfection</h3>
+                    <p class="select-descriotion">Deployment ownership non-disclosure agreement vesting period crowdfunding success influencer partnership.</p>
+                </div>
+                <div class="select-item-4">
+                    <img class="select-img" src="img/smart-experience.png" alt="smart-experience">
+                    <h3 class="select-title">Smart
+                        Experience</h3>
+                    <p class="select-descriotion">Success scrum project funding marketing seed money prototype innovator direct hackathon android angel investor.</p>
+                </div>
+                <div class="select-item-5">
+                    <img class="select-img" src="img/strict-deadline.png" alt="strict-deadline">
+                    <h3 class="select-title">Strict
+                        Deadline</h3>
+                    <p class="select-descriotion">Technology founders churn rate niche market long tail release iteration burn rate backing. Churn rate accelerator.</p>
+                </div>
+                <div class="select-item-6">
+                    <img class="select-img" src="img/award-winning.png" alt="award-winning">
+                    <h3 class="select-title">Award-winning
+                        Company</h3>
+                    <p class="select-descriotion">Deployment ownership non-disclosure agreement vesting period crowdfunding success influencer partnership.</p>
+                </div>
+            </div>
+            <div class="start-btn">
+                <h3 class="start-btn-title">Start your journy with us now</h3>
+                <button class="select-btn" type="button" name="get-started" onclick="linkClick()">Get Started</button>
+            </div>
+         </section>
+         <section id="blog-part">
+            <h2 class="section-title">Our Blog.</h2>
+            <h3 class="section-about">We understand your requirement and provide quality works.</h3>
+            <div class="articles">
+                <article class="article-1">
+                    <img class="article-img-1" src="img/article-img.png" alt="article-image">
+                    <div class="article-content">
+                        <span class="article-autor-1">Damian Schreiber</span>
+                        <span class="article-date">December 10, 2015</span>
+                        <h3 class="article-title">Facebook’s CNN livestream will test its place in the second screen era</h3>
+                        <p class="article-text">Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm
+                            <a class="article-link-1" href="">Read full articl »</a>
+                        </p>
+                    </div>
+                </article>
+                <article class="article-2">
+                    <img class="article-img-2" src="img/article-img.png" alt="article-image">
+                    <div class="article-content">
+                        <span class="article-autor-2">Damian Schreiber</span>
+                        <span class="article-date">December 10, 2015</span>
+                        <h3 class="article-title">Google Street View adds virtual reality support</h3>
+                        <p class="article-text">Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm
+                            <a class="article-link-2" href="">Read full articl »</a>
+                        </p> 
+                    </div>
+                </article>
+                <article class="article-3">
+                    <img class="article-img-3" src="img/article-img.png" alt="article-image">
+                    <div class="article-content">
+                         <span class="article-autor-3">Damian Schreiber</span>
+                         <span class="article-date">December 10, 2015</span>
+                         <h3 class="article-title">Google Street View adds virtual reality support</h3>
+                         <p class="article-text">Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm
+                             <a class="article-link-3" href="">Read full articl »</a>
+                         </p>
+                    </div>  
+                </article>
+                <article class="article-4">
+                    <img class="article-img-4" src="img/article-img.png" alt="article-image">
+                    <div class="article-content">
+                        <span class="article-autor-4">Damian Schreiber</span>
+                        <span class="article-date">December 10, 2015</span>
+                        <h3 class="article-title">Google Street View adds virtual reality support</h3>
+                        <p class="article-text">Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm
+                            <a class="article-link-4" href="">Read full articl »</a>
+                        </p> 
+                    </div>
+                </article>
+            </div>
+            <div class="subscribe">
+                <h3 class="subscribe-title">Subscribe to Newsletter</h3>
+                <form class="blog-form" action="#">
+                     <input class="blog-input" type="text" name="email" placeholder="Enter yor email">
+                     <button class="blog-btn" type="button" name="subscribe">Subscribe Now</button>
+                </form> 
+            </div>
+         </section>
+    </main>
+    <footer id="contacts">
+        <h2 class="section-title">Get in Touch.</h2>
+        <h3 class="section-about">We understand your requirement and provide quality works.</h3>
+        <form class="contacts-form" action="#">
+            <div class="input">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Yor Email">
+                <input type="text" name="subject" id="subject" placeholder="Subject">
+                <input type="text" name="project-budget" id="project-budget" placeholder="Project Budget"> 
+            </div>
+            <textarea name="message" id="message" placeholder="Your message"></textarea>
+            <button class="form-btn" type="button" name="send-message">Send Message</button>
+        </form>
+        <div class="footer-contacts">
+            <div class="footer-logo">
+                <h2 id="logo">Alexis</h2>
+            </div>
+            <div class="footer-address-1">
+                <h3 class="title-addres-1">Alexis LLC.</h3>
+                <address class="address-text">
+                    4125 Brighton Circle Road
+                    Little Falls, MN 56345</address>
+            </div>
+            <div class="footer-address-2">
+                <h3 class="title-addres-2">Alexis LLC UK.</h3>
+                <address class="address-text">
+                    81 Golden Knowes Road
+                    FRESHFIELD   L37 6TP</address>
+            </div>
+            <div class="footer-links">
+                <h3 class="folow-us">Follow Us.</h3>
+                <a class="contact-link" href="https://www.facebook.com/">
+                     <i class="fab fa-facebook-square link"></i>
+                </a>
+                <a class="contact-link" href="https://twitter.com/">
+                    <i class="fab fa-twitter-square link"></i>
+                </a>
+                <a class="contact-link" href="https://www.instagram.com/">
+                    <i class="fab fa-instagram link"></i>
+                </a>
+                <a class="contact-link" href="https://www.google.com/intl/ru/gmail/about/">
+                    <i class="fab fa-google-plus-square link"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
